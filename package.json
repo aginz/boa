@@ -3,9 +3,7 @@
   "version": "0.0.1",
   "description": "Component Based CSS Framework",
   "scripts": {
-    "server": "jekyll server",
-    "watch": "gulp watch",
-    "compile": "gulp compile"
+    "server": "gulp server"
   },
   "repository": {
     "type": "git",
@@ -22,6 +20,7 @@
   },
   "homepage": "https://github.com/caribbeanpirates/boa#readme",
   "devDependencies": {
+    "browser-sync": "^2.15.0",
     "gulp": "^3.9.1",
     "gulp-postcss": "^6.1.1",
     "gulp-sourcemaps": "^1.6.0",

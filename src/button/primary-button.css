@@ -1,0 +1,24 @@
+:root {
+  --boa-primary-button-background: hsla(206, 73%, 47%, 1);
+  --boa-primary-button-color: hsla(255,0%,100%,1);
+  --boa-primary-button-border-color: var(--boa-primary-button-background);
+}
+
+.boa-button__primary {
+  &.boa-button {
+    background: var(--boa-primary-button-background);
+    color: var(--boa-primary-button-color);
+    border-color: var(--boa-primary-button-border-color);
+  }
+
+  &.boa-button:matches(:hover, :focus),
+  &.boa-button__hovered,
+  &.boa-button__focused {
+    background: color(var(--boa-primary-button-background) blackness(30%));
+  }
+
+  &.boa-button:active,
+  &.boa-button__active {
+    background: color(var(--boa-primary-button-background) blackness(40%));
+  }
+}

@@ -1,0 +1,22 @@
+:root {
+  --boa-button-background: hsla(0,0%,90%,1);
+  --boa-button-color: hsla(0,0%,0%,0.6);
+  --boa-button-border-color: var(--boa-button-background);
+}
+
+.boa-button {
+  background: var(--boa-button-background);
+  color: var(--boa-button-color);
+  border-color: var(--boa-button-border-color);
+}
+
+.boa-button:matches(:hover, :focus),
+.boa-button__hovered,
+.boa-button__focused {
+  background: color(var(--boa-button-background) blackness(20%));
+}
+
+.boa-button:active,
+.boa-button__active {
+  background: color(var(--boa-button-background) blackness(40%));
+}

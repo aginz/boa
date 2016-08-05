@@ -1,43 +1,18 @@
 # Boa
 Is a Component Based CSS Framework. The name is from a character of One Piece
 Manga.
-![Boa Hancock](github/boa-hancock.png)
-
-## Component List
-- [x] Button
-- [x] Button Group
-- [ ] Icon
-- [ ] Toolbar
-- [ ] Card
-- [ ] Breadcrumb
-- [ ] Menu
-- [ ] Dropdown
-- [ ] Modal
-- [ ] Tabs
-- [ ] Popover
-- [ ] Tag
-- [ ] Tooltip
-- [ ] Input
-- [ ] Input Group
-- [ ] Dropdown
-- [ ] Checkbox/Radio
-- [ ] Dimmer
-- [ ] Accordion
+![Boa Hancock](.github/boa-hancock.png)
 
 ## Development
-
-NodeJS and Ruby are required. `docs` folder contains the documentation but also
-is used for development. `The documentation is your testing`. Under the
-`docs/components/*` are all the components of the framework.
+NodeJS is required.
 
 ```bash
-gem install bundle
-bundle install
-
 npm install
 ```
-Available Tasks
-- `npm run compile`: compile CSS files
-- `npm run watch`: compile the CSS files when detects any changes
 
-Note: npm tasks are wrapper around `gulp` tasks and `jekyll` commands.
+Use `gulp -T` for see the current available tasks.
+
+### How to test?
+Start the local server using `npm run server` or `gulp server`. Every component
+have a folder called `__test__` which have all the pages for testing. All the paths
+in are relative to the root of the project.

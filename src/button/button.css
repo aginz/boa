@@ -1,69 +1,48 @@
-@custom-selector :--boa-button .boa-button;
-
 :root {
-  --boa-button-background: hsla(0,0%,90%,1);
-  --boa-button-color: hsla(0,0%,0%,0.6);
   --boa-button-border-radius: .2em;
-  --boa-button-border: none;
-
-  --boa-button: {
-    padding: .8em 1em;
-
-    background: var(--boa-button-background);
-    color: var(--boa-button-color);
-
-    border: var(--boa-button-border);
-    border-radius: var(--boa-button-border-radius);
-
-    box-shadow: none;
-  };
-
-  --boa-button-hover: { background: color(var(--boa-button-background) blackness(20%)); };
-  --boa-button-focus: { background: color(var(--boa-button-background) blackness(20%)); };
-  --boa-button-active: { background: color(var(--boa-button-background) blackness(20%)); };
-  --boa-button-disable: { opacity: .45; };
 }
 
-:--boa-button {
-  @apply --boa-button;
-
+.boa-button {
   display: inline-block;
   min-height: 1em;
   vertical-align: baseline;
+
+  padding: .8em 1em;
 
   font-size: 1em;
   line-height: 1em;
   text-align: center;
   text-decoration: none;
 
+  border-width: 1px;
+  border-style: solid;
+  border-radius: var(--boa-button-border-radius);
+
   cursor: pointer;
   box-sizing: border-box;
-  outline: none;
   will-change: background, color;
+  box-shadow: none;
 
   transition: opacity .1s ease,
-              background-color .1s ease,
               background .1s ease,
-              color .1s ease,
-              box-shadow .1s ease;
+              color .1s ease;
+}
 
-  &:hover,
-  &--hovered { @apply --boa-button-hover; }
+.boa-button__block {
+  display: block;
+}
 
-  &:focus,
-  &--focused { @apply --boa-button-focus; }
+.boa-button__small {
+  font-size: 80%;
+}
 
-  &:active,
-  &--activated { @apply --boa-button-active; }
+.boa-button__large {
+  font-size: 140%;
+}
 
-  &:disabled,
-  &:disabled:hover,
-  &--disabled,
-  &--disabled:hover,
-  &--disabled:focus,
-  &--disabled:active {
-    @apply --boa-button-disable;
-    pointer-events: none;
-    cursor: not-allowed;
-  }
+.boa-button[disabled],
+.boa-button__disabled {
+  opacity: .45;
+  pointer-events: none;
+  cursor: not-allowed;
 }
