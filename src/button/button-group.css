@@ -1,0 +1,51 @@
+@custom-selector :--boa-button .boa-button;
+@custom-selector :--boa-button-group .boa-button-group;
+
+:root {
+  --boa-button-group-border-radius: .2em;
+
+  --boa-button-group: {};
+}
+
+:--boa-button-group {
+  @apply --boa-button-group;
+
+  display: inline-flex;
+
+  & > :--boa-button {
+    flex: 1;
+    border-radius: 0;
+  }
+
+  &--fluid { display: flex; }
+
+  &--horizontal {
+    & > :--boa-button {
+      &:first-child {
+        border-top-left-radius: var(--boa-button-group-border-radius);
+        border-bottom-left-radius: var(--boa-button-group-border-radius);
+      }
+
+      &:last-child {
+        border-top-right-radius: var(--boa-button-group-border-radius);
+        border-bottom-right-radius: var(--boa-button-group-border-radius);
+      }
+    }
+  }
+
+  &--vertical {
+    flex-direction: column;
+
+    & > :--boa-button {
+      &:first-child {
+        border-top-left-radius: var(--boa-button-group-border-radius);
+        border-top-right-radius: var(--boa-button-group-border-radius);
+      }
+
+      &:last-child {
+        border-bottom-left-radius: var(--boa-button-group-border-radius);
+        border-bottom-right-radius: var(--boa-button-group-border-radius);
+      }
+    }
+  }
+}

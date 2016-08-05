@@ -1,0 +1,30 @@
+{
+  "name": "boa",
+  "version": "0.0.1",
+  "description": "Component Based CSS Framework",
+  "scripts": {
+    "server": "jekyll server",
+    "watch": "gulp watch",
+    "compile": "gulp compile"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/caribbeanpirates/boa.git"
+  },
+  "keywords": [
+    "css",
+    "framework"
+  ],
+  "author": "Yordis Prieto <yordis.prieto@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/caribbeanpirates/boa/issues"
+  },
+  "homepage": "https://github.com/caribbeanpirates/boa#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-postcss": "^6.1.1",
+    "gulp-sourcemaps": "^1.6.0",
+    "postcss-cssnext": "^2.7.0"
+  }
+}
