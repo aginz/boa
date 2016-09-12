@@ -1,7 +1,4 @@
 const gulp = require('gulp')
-const sourcemaps = require('gulp-sourcemaps')
-const postcss = require('gulp-postcss')
-const cssnext = require('postcss-cssnext')
 const BrowserSyncServer = require('browser-sync').create()
 
 const CompileTask = require('./tasks/compile.task')
