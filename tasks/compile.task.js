@@ -2,9 +2,11 @@ const gulp = require('gulp')
 const sourcemaps = require('gulp-sourcemaps')
 const postcss = require('gulp-postcss')
 const cssnext = require('postcss-cssnext')
+const atImport = require("postcss-import")
 
 const config = require('./config')
 const processors = [
+  atImport(),
   cssnext()
 ]
 

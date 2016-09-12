@@ -1,5 +1,7 @@
+@import "../variables.css";
+
 :root {
-  --boa-primary-button-background: hsla(206, 73%, 47%, 1);
+  --boa-primary-button-background: var(--boa-primary-color);
   --boa-primary-button-color: hsla(255,0%,100%,1);
   --boa-primary-button-border-color: var(--boa-primary-button-background);
 }
