@@ -1,6 +1,4 @@
-:root {
-  --boa-button-border-radius: .2em;
-}
+@import "variables";
 
 .boa-button {
   display: inline-block;
@@ -9,6 +7,8 @@
 
   padding: .8em 1em;
 
+  background-color: rgb(192, 192, 192);
+
   font-size: 1em;
   line-height: 1em;
   text-align: center;
@@ -16,7 +16,8 @@
 
   border-width: 1px;
   border-style: solid;
-  border-radius: var(--boa-button-border-radius);
+  border-color: rgb(192, 192, 192);
+  border-radius: $boa-button-border-radius;
 
   cursor: pointer;
   box-sizing: border-box;
@@ -26,23 +27,23 @@
   transition: opacity .1s ease,
               background .1s ease,
               color .1s ease;
-}
 
-.boa-button__block {
-  display: block;
-}
+  &__block {
+    display: block;
+  }
 
-.boa-button__small {
-  font-size: 80%;
-}
+  &__small {
+    font-size: 80%;
+  }
 
-.boa-button__large {
-  font-size: 140%;
-}
+  &__large {
+    font-size: 140%;
+  }
 
-.boa-button[disabled],
-.boa-button__disabled {
-  opacity: .45;
-  pointer-events: none;
-  cursor: not-allowed;
+  &[disabled],
+  &__disabled {
+    opacity: $boa-button-disabled-opacity;
+    pointer-events: none;
+    cursor: not-allowed;
+  }
 }

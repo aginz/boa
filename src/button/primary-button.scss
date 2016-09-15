@@ -1,0 +1,25 @@
+@import "variables";
+
+.boa-button__primary {
+  &.boa-button {
+    background: $boa-primary-button-background;
+    color: $boa-primary-button-color;
+    border-color: $boa-primary-button-border-color;
+
+    &:hover,
+    &:focus,
+    &__hovered,
+    &__focused {
+      background: saturate($boa-primary-button-background, 20);
+    }
+
+    &:active,
+    &__active {
+      &,
+      &:hover,
+      &:focus, {
+        background: darken($boa-primary-button-background, 10);
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+@import "variables";
+
+.boa-button {
+  background: $boa-button-background;
+  color: $boa-button-color;
+  border-color: $boa-button-background;
+
+  &:hover,
+  &:focus,
+  &__hovered,
+  &__focused {
+    background: darken($boa-button-background, 20);
+  }
+
+  &:active,
+  &__active {
+    &,
+    &:hover,
+    &:focus, {
+      background: darken($boa-button-background, 40);
+    }
+  }
+}

@@ -1,6 +1,6 @@
 module.exports = {
   paths: {
-    stylesheets: ['./src/**/*.css', '!./src/variables.css'],
+    stylesheets: ['./src/**/*.scss'],
     dist: './lib'
   }
 }
