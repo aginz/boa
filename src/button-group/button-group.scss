@@ -8,11 +8,11 @@
     border-radius: 0;
   }
 
-  &__fluid {
+  &--fluid {
     display: flex;
   }
 
-  &__horizontal {
+  &--horizontal {
     & > * {
       &:first-child {
         border-top-left-radius: $boa-button-group-border-radius;
@@ -26,7 +26,7 @@
     }
   }
 
-  &__vertical {
+  &--vertical {
     flex-direction: column;
 
     & > * {
