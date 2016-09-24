@@ -6,14 +6,12 @@
   border-color: $boa-button-background;
 
   &:hover,
-  &:focus,
-  &--hovered,
-  &--focused {
+  &:focus {
     background: darken($boa-button-background, 20);
   }
 
   &:active,
-  &--active {
+  &--pressed {
     &,
     &:hover,
     &:focus, {

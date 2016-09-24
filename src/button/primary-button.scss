@@ -7,14 +7,12 @@
     border-color: $boa-primary-button-border-color;
 
     &:hover,
-    &:focus,
-    &--hovered,
-    &--focused {
+    &:focus {
       background: saturate($boa-primary-button-background, 20);
     }
 
     &:active,
-    &--active {
+    &--pressed {
       &,
       &:hover,
       &:focus, {
