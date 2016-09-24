@@ -1,6 +1,6 @@
 @import "variables";
 
-.boa-button__primary {
+.boa-button--primary {
   &.boa-button {
     background: $boa-primary-button-background;
     color: $boa-primary-button-color;
@@ -8,13 +8,13 @@
 
     &:hover,
     &:focus,
-    &__hovered,
-    &__focused {
+    &--hovered,
+    &--focused {
       background: saturate($boa-primary-button-background, 20);
     }
 
     &:active,
-    &__active {
+    &--active {
       &,
       &:hover,
       &:focus, {

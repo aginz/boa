@@ -28,20 +28,21 @@
               background .1s ease,
               color .1s ease;
 
-  &__block {
+  &--block {
     display: block;
+    width: 100%;
   }
 
-  &__small {
+  &--small {
     font-size: 80%;
   }
 
-  &__large {
+  &--large {
     font-size: 140%;
   }
 
   &[disabled],
-  &__disabled {
+  &--disabled {
     opacity: $boa-button-disabled-opacity;
     pointer-events: none;
     cursor: not-allowed;

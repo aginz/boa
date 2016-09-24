@@ -7,13 +7,13 @@
 
   &:hover,
   &:focus,
-  &__hovered,
-  &__focused {
+  &--hovered,
+  &--focused {
     background: darken($boa-button-background, 20);
   }
 
   &:active,
-  &__active {
+  &--active {
     &,
     &:hover,
     &:focus, {
