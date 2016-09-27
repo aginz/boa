@@ -1,23 +1,21 @@
 @import "variables";
 
 .boa-button--primary {
-  &.boa-button {
-    background: $boa-primary-button-background;
-    color: $boa-primary-button-color;
-    border-color: $boa-primary-button-border-color;
+  background: $boa-primary-button-background;
+  color: $boa-primary-button-color;
+  border-color: $boa-primary-button-border-color;
 
+  &:hover,
+  &:focus {
+    background: saturate($boa-primary-button-background, 20);
+  }
+
+  &:active,
+  &--pressed {
+    &,
     &:hover,
     &:focus {
-      background: saturate($boa-primary-button-background, 20);
-    }
-
-    &:active,
-    &--pressed {
-      &,
-      &:hover,
-      &:focus, {
-        background: darken($boa-primary-button-background, 10);
-      }
+      background: darken($boa-primary-button-background, 10);
     }
   }
 }

@@ -14,7 +14,7 @@
   &--pressed {
     &,
     &:hover,
-    &:focus, {
+    &:focus {
       background: darken($boa-button-background, 40);
     }
   }
