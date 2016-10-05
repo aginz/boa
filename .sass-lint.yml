@@ -225,7 +225,7 @@ rules:
     -
       global:
         - rem
-        - %
+        - '%'
       per-property:
         font-size: em
 
