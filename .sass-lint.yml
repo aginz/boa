@@ -1,0 +1,235 @@
+rules:
+  attribute-quotes:
+    - 2
+    -
+      include: true
+
+  bem-depth:
+    - 2
+    -
+      max-depth: 1
+
+  border-zero:
+    - 2
+    -
+      convention: none
+
+  brace-style:
+    - 2
+    -
+      style: 1tbs
+      allow-single-line: false
+
+  class-name-format:
+    - 2
+    -
+      allow-leading-underscore: true
+      convention: hyphenatedbem
+
+  clean-import-paths:
+    - 2
+    -
+      leading-underscore: false
+      filename-extension: false
+
+  empty-args:
+    - 2
+    -
+      include: true
+
+  empty-line-between-blocks:
+    - 2
+    -
+      include: true
+      allow-single-line-rulesets: false
+
+  extends-before-declarations: 2
+  extends-before-mixins: 2
+
+  final-newline:
+    - 2
+    -
+      include: true
+
+  force-attribute-nesting: 0
+  force-element-nesting: 0
+  force-pseudo-nesting: 0
+
+  function-name-format:
+    - 2
+    -
+      allow-leading-underscore: true
+      convention: hyphenatedbem
+
+  hex-length:
+    - 2
+    -
+      style: short
+
+  hex-notation:
+    - 2
+    -
+      style: lowercase
+
+  id-name-format:
+    - 2
+    -
+      allow-leading-underscore: true
+      convention: hyphenatedlowercase
+
+  indentation:
+    - 2
+    -
+      size: 2
+
+  leading-zero:
+    - 2
+    -
+      include: false
+
+  mixin-name-format:
+    - 2
+    -
+      allow-leading-underscore: true
+      convention: hyphenatedbem
+
+  mixins-before-declarations: 2
+
+  nesting-depth:
+    - 2
+    -
+      max-depth: 2
+
+  no-attribute-selectors: 0
+  no-color-hex: 2
+  no-color-keywords: 2
+
+  no-color-literals:
+    - 2
+    -
+      allow-map-identifiers: true
+      allow-rgba: true
+      allow-variable-identifiers: true
+
+  no-combinators: 0
+  no-css-comments: 2
+  no-debug: 2
+
+  no-disallowed-properties:
+    - 1
+    -
+      properties:
+        - z-index
+
+  no-duplicate-properties: 2
+  no-empty-rulesets: 2
+  no-extends: 2
+  no-ids: 2
+  no-important: 2
+  no-invalid-hex: 2
+#  https://github.com/sasstools/sass-lint/blob/master/docs/rules/no-mergeable-selectors.md#note-for-sass-syntax-users
+  no-mergeable-selectors: 0
+  no-misspelled-properties: 2
+
+  no-qualifying-elements:
+    - 2
+    -
+      allow-element-with-attribute: true
+      allow-element-with-class: false
+      allow-element-with-id: false
+
+  no-trailing-whitespace: 2
+  no-trailing-zero: 2
+  no-transition-all: 2
+  no-universal-selectors: 2
+  no-url-protocols: 2
+  no-vendor-prefixes: 2
+  no-warn: 2
+  one-declaration-per-line: 2
+  placeholder-in-extend: 0
+
+  placeholder-name-format:
+    - 2
+    -
+      allow-leading-underscore: true
+      convention: hyphenatedbem
+
+  pseudo-element: 0
+
+  quotes:
+    - 2
+    -
+      style: single
+
+  shorthand-values: 2
+  single-line-per-selector: 2
+
+  space-after-bang:
+    - 2
+    -
+      include: false
+
+  space-after-colon: 2
+
+  space-after-comma:
+    - 2
+    -
+      include: true
+
+  space-around-operator:
+    - 2
+    -
+      include: true
+
+  space-before-bang:
+    - 2
+    -
+      include: true
+
+  space-before-brace:
+    - 2
+    -
+      include: true
+
+  space-before-colon:
+    - 2
+    -
+      include: false
+
+  space-between-parens:
+    - 2
+    -
+      include: false
+
+  trailing-semicolon:
+    - 2
+    -
+      include: true
+
+  url-quotes: 2
+  variable-for-property: 0
+
+  variable-name-format:
+    - 2
+    -
+      allow-leading-underscore: true
+      convention: hyphenatedlowercase
+
+  zero-unit:
+      - 2
+      -
+        include: false
+
+  property-units:
+    - 2
+    -
+      global:
+        - rem
+        - %
+      per-property:
+        font-size: em
+
+  property-sort-order:
+    - 2
+    -
+      order: concentric
