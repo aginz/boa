@@ -141,7 +141,7 @@ rules:
   no-trailing-whitespace: 2
   no-trailing-zero: 2
   no-transition-all: 2
-  no-universal-selectors: 2
+  no-universal-selectors: 0
   no-url-protocols: 2
   no-vendor-prefixes: 2
   no-warn: 2

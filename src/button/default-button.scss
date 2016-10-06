@@ -1,9 +1,9 @@
-@import "variables";
+@import 'variables';
 
 .boa-button {
+  border-color: $boa-button-background;
   background: $boa-button-background;
   color: $boa-button-color;
-  border-color: $boa-button-background;
 
   &:hover,
   &:focus {

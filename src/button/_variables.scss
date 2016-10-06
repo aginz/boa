@@ -1,13 +1,13 @@
-@import "../variables";
+@import '../variables';
 
 $boa-button-disabled-opacity: .45;
 $boa-button-border-radius: 1em;
 
-$boa-button-background: hsla(0,0%,90%,1);
-$boa-button-color: hsla(0,0%,0%,0.6);
+$boa-button-background: hsla(0, 0%, 90%, 1);
+$boa-button-color: hsla(0, 0%, 0%, .6);
 $boa-button-border-color: $boa-button-background;
 
 $boa-primary-button-background: $boa-primary-color;
-$boa-primary-button-color: hsla(255,0%,100%,1);
+$boa-primary-button-color: hsla(255, 0%, 100%, 1);
 $boa-primary-button-border-color: $boa-primary-button-background;
 
