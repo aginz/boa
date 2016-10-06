@@ -127,7 +127,7 @@ rules:
   no-ids: 2
   no-important: 2
   no-invalid-hex: 2
-#  https://github.com/sasstools/sass-lint/blob/master/docs/rules/no-mergeable-selectors.md#note-for-sass-syntax-users
+  # https://github.com/sasstools/sass-lint/blob/master/docs/rules/no-mergeable-selectors.md#note-for-sass-syntax-users
   no-mergeable-selectors: 0
   no-misspelled-properties: 2
 
@@ -228,6 +228,13 @@ rules:
         - '%'
       per-property:
         font-size: em
+        transition: s
+        border-width: px
+        min-height:
+          - em
+          - '%'
+        padding: em
+        line-height: em
 
   property-sort-order:
     - 2
