@@ -1,5 +1,5 @@
 {
-  "name": "boa",
+  "name": "@ubi/boa",
   "version": "0.0.1",
   "description": "Component Based CSS Framework",
   "scripts": {
