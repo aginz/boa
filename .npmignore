@@ -3,6 +3,6 @@ src
 tasks
 .editorconfig
 .sass-lint.yml
-browserlist
+browserslist
 CNAME
 gulpfile.js
