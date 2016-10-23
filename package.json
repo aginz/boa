@@ -3,7 +3,8 @@
   "version": "0.0.1",
   "description": "Component Based CSS Framework",
   "scripts": {
-    "server": "gulp server"
+    "start": "gulp server",
+    "prepublish": "gulp compile && gulp lint"
   },
   "repository": {
     "type": "git",
